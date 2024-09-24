@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap");
+
+/* CSS Variables for Consistency */
+:root {
+  --primary-bg: #121212; /* Rich Black */
+  --secondary-bg: #1E1E1E; /* Eerie Black */
+  --primary-text: #E0E0E0; /* Light Gray */
+  --accent-color: #03DAC6; /* Teal */
+  --accent-hover: #018786; /* Dark Teal */
+}
+
+body {
+  margin: 0;
+  font-family: "Raleway", sans-serif !important; /* Changed to sans-serif for better readability */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-image: linear-gradient(to left, var(--primary-bg), var(--secondary-bg)); /* Updated to dark-themed gradient */
+  background-color: var(--primary-bg); /* Fallback background color */
+  color: var(--primary-text); /* Set default text color to light gray */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Ensuring the root takes full height */
+#root {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Links Styling */
+a {
+  color: var(--accent-color); /* Teal accent for links */
+  text-decoration: none; /* Removed underline to prevent redundancy */
+}
+
+a:hover {
+  color: var(--accent-hover); /* Dark Teal on hover */
+  /* Removed text-decoration: underline; as it's handled in the main CSS */
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background: #2D2D2D; /* Dark Gray */
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--accent-color); /* Teal */
+  border-radius: 12px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent-hover); /* Dark Teal */
+  border-radius: 12px;
+}
+
+/* Footer Styling */
+.footer {
+  background-color: var(--secondary-bg);
+  padding-top: 10px !important;
+  padding-bottom: 8px !important;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.footer-copywright {
+  text-align: center !important;
+}
+
+.footer-body {
+  z-index: 1;
+  text-align: center !important;
+}
+
+@media (max-width: 767px) {
+  .footer-copywright,
+  .footer-body {
+    text-align: center !important;
+  }
+}
+
+.footer h3 {
+  font-size: 1em;
+  color: var(--primary-text) !important;
+  margin-top: 0.5em !important;
+  margin-bottom: 0.5em !important;
+}
+
+.footer-icons {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-icons .social-icons {
+  margin: 0 10px;
+}
+
+.icon-colour {
+  color: var(--primary-text);
+  transition: color 0.3s ease;
+}
+
+.icon-colour:hover {
+  color: var(--accent-color); /* Teal Accent on Hover */
+}
+
+/* Ensure main content does not get hidden behind the fixed footer */
+.home-section {
+  padding-bottom: 100px; /* Adjust based on footer height */
+}
+
+/* Additional Global Styles */
+.primary-text {
+  color: var(--primary-text) !important;
+}
+
+.imp-text-color {
+  color: var(--accent-color) !important;
+}
+/* Custom Navbar Styles */
+.navbar {
+  transition: background-color 0.5s ease;
+}
+
+.navbar.sticky {
+  background-color: #1E1E1E !important; /* Eerie Black when scrolled */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .nav-link {
+  color: #E0E0E0 !important; /* Light Gray for nav links */
+  margin-right: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.navbar .nav-link:hover {
+  color: #03DAC6 !important; /* Teal on hover */
+}
+
+.navbar .nav-link svg {
+  margin-right: 5px;
+}
+
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(224,224,224, 0.7)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
