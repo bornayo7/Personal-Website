@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/personal-website/static/css/main.2cd90820.css",
+    "main.js": "/personal-website/static/js/main.d887e748.js",
+    "static/js/787.1ed0c42c.chunk.js": "/personal-website/static/js/787.1ed0c42c.chunk.js",
+    "static/media/home-bg.jpg": "/personal-website/static/media/home-bg.d6cd8f57c57dacfaf8ed.jpg",
+    "static/media/website.png": "/personal-website/static/media/website.ee6956b9fa80680b5f84.png",
+    "static/media/Yash Baruah Resume.pdf": "/personal-website/static/media/Yash Baruah Resume.133d2793cdb996c5ebd4.pdf",
+    "static/media/about.png": "/personal-website/static/media/about.aee0f771fbfc1e7b8fa8.png",
+    "static/media/ais_utd_logo.png": "/personal-website/static/media/ais_utd_logo.0cf1532ac3ff3abb86b2.png",
+    "static/media/logo.png": "/personal-website/static/media/logo.d12c750ed03232c4c1bf.png",
+    "static/media/avatar.png": "/personal-website/static/media/avatar.a0cf08dee891d71041cf.png",
+    "static/media/laptop.png": "/personal-website/static/media/laptop.497296fa324e8fa86467.png",
+    "static/media/pre.svg": "/personal-website/static/media/pre.d4812f51c8c80976eaab.svg",
+    "index.html": "/personal-website/index.html",
+    "main.2cd90820.css.map": "/personal-website/static/css/main.2cd90820.css.map",
+    "main.d887e748.js.map": "/personal-website/static/js/main.d887e748.js.map",
+    "787.1ed0c42c.chunk.js.map": "/personal-website/static/js/787.1ed0c42c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2cd90820.css",
+    "static/js/main.d887e748.js"
+  ]
+}
